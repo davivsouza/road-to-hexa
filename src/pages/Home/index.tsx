@@ -6,7 +6,7 @@ import { Header } from "../../components/Header"
 export function Home(){
   return(
     <Container>
-      <Header />
+      <Header menuBackground="yellow"/>
       <Main>
         <img src={SloganBanner} alt="Slogan Banner" className="flat"/>
         <h1>VAMOS <span>JUNTOS</span> RUMO AO HEXA.</h1>
@@ -16,7 +16,7 @@ export function Home(){
 
          <div className="buttons">
          <Button>
-            Partiu
+            <Link to={'/road-to-hexa'}>Partiu</Link>
           </Button>
           <Button>
             Ver Jogos

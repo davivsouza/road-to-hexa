@@ -8,6 +8,7 @@ import { OurHistory } from "./pages/NossaHistoria/OurHistory"
 import { theme } from "./styles/themes/theme"
 import { Header } from "./components/Header"
 import { RoadToHexa } from "./pages/RoadToHexa"
+import { HexaNews } from "./pages/RoadToHexa/hexa-news"
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route element={<NossoBrasil/>} path="/nosso-brasil"/>
         <Route element={<NossaHistoria/>} path="/nossa-historia"/>
         <Route element={<RoadToHexa/>} path="/road-to-hexa"/>
+        <Route element={<HexaNews/>} path="/road-to-hexa/:id"/>
         <Route element={<OurHistory/>} path="/nossa-historia/:id"/>
         <Route element={<News/>} path="/nosso-brasil/:id"/>
       </Routes>

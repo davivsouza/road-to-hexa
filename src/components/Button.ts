@@ -10,7 +10,10 @@ export const Button = styled.button`
   padding: 15px 10px;
   border-radius: 10px;
 
-
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
   background: linear-gradient(90deg, #3CAC59 0%, #32C457 100%), linear-gradient(90deg, #34DD60 -71.52%, #0AFA48 126.74%);;
 
 `

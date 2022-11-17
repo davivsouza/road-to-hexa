@@ -6,7 +6,11 @@ import { Burguer } from "../Burguer";
 import { useState } from "react";
 import { Menu } from "../Menu";
 
-export function Header() {
+interface Props{
+  menuBackground?: string | undefined;
+}
+
+export function Header({menuBackground}:Props) {
   const [open, setOpen] = useState(false);
   return (
     <Container>
@@ -15,7 +19,7 @@ export function Header() {
       </Link>
       <div>
         <Burguer open={open} setOpen={setOpen}/>
-        <Menu open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} menuBackground={menuBackground}/>
       </div>
     </Container>
   )

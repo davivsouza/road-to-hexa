@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 interface Props {
   open: boolean
   setOpen: Dispatch<SetStateAction<boolean>>
+  menuBackground?: string | undefined;
+
 }
-export function Menu({ open }: Props) {
+export function Menu({ open,  menuBackground}: Props) {
   return (
-    <StyledMenu open={open}>
+    <StyledMenu open={open} menuBackground={menuBackground}>
       <Link to="/">
         <span role="img"><img src={HomeIcon} alt="Home" /></span>
         Home

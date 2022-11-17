@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 interface Props {
   open: boolean
+  menuBackground?: string
 }
 export const StyledMenu = styled.nav<Props>`
   display: ${({ open }) => open ? 'flex' : 'none'};
   flex-direction: column;
   align-items: flex-start;
-  background: linear-gradient(90deg, #1053FF 36.74%, #5172EA 104.46%), #FFFFFF;
+  background: ${({ menuBackground }) => menuBackground != 'yellow' ? 'linear-gradient(88.59deg, #3CAC59 -66%, #32C457 98.8%)' : 'linear-gradient(90deg, #FFBF10 36.74%, #F5C542 104.46%), #FFFFFF;'};
   height: 100vh;
   text-align: left;
   padding: 2rem;
