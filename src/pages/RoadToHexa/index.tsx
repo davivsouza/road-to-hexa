@@ -13,8 +13,8 @@ export function RoadToHexa() {
         <img src={RoadToHexaFlat} alt="Nosso Brasil" className='flat' />
         <h1>VAMOS<span>JUNTOS</span> EM <span>BUSCA</span> DO <span>HEXA</span></h1>
         <p className="description">
-       <span> NOSSA </span> MAIOR <span>FRAQUEZA</span> ESTÁ EM 
-       <span>DESISTIR</span>. O <span>CAMINHO</span> MAIS <span>CERTO</span>
+       <span> NOSSA </span> MAIOR <span>FRAQUEZA</span> ESTÁ EM  
+       <span> DESISTIR</span>. O <span>CAMINHO</span> MAIS <span>CERTO </span>
         DE <span>VENCER</span> É <span>TENTAR</span> MAIS <span>UMA VEZ</span>
         </p>
 

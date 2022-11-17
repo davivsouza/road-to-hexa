@@ -60,14 +60,15 @@ export const Main = styled.main`
       
       a{
         display: flex;
-        align-items: center ;
-        gap: 10px;
+        align-items: flex-start ;
+        gap: 8px;
         text-decoration: none;
         color: #fff;
       }
       img{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
+        border-radius:15px ;
       }
       .news-title{
         font-family: 'Sen';
@@ -79,6 +80,7 @@ export const Main = styled.main`
         display:flex ;
         align-items:center ;
         gap: 4px;
+        height: 40px;
 
         img{
           width: 20px;

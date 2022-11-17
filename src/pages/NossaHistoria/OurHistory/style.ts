@@ -39,6 +39,7 @@ export const Container = styled.main`
     img{
       width:100% ;
       margin: 24px 0;
+      border-radius: 15px;
     }
   }
 `

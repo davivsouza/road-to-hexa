@@ -11,7 +11,7 @@ export function HexaNews(){
   if(noticia){
     return (
       <Container>
-        <Link to="/nosso-brasil">
+        <Link to="/road-to-hexa">
           <img src={leftArrow} alt="Left Arrow" className="back"/>
         </Link>
         <img src={noticia.wallpaper} alt={noticia.title} className="wallpaper"/>
