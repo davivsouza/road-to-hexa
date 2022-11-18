@@ -8,7 +8,7 @@ export const Container = styled.main`
 
   padding: 350px 40px 20px;
   position: relative;
-  h1, p{
+  h1,h3, p{
     font-family: 'Sen';
     color: #fff;
     margin-bottom: 8px;
