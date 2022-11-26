@@ -6,9 +6,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-
+  
   padding: 20px 40px;
   background: ${({theme}) => `linear-gradient(90deg, ${theme.colors.primary} 36.74%, ${theme.colors.secundary} 104.46%), #FFFFFF;`} ;
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 `
 
 
@@ -43,11 +49,5 @@ export const Main = styled.main`
     }
   }
 
-  .buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
 
 `

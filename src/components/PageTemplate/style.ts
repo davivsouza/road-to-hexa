@@ -1,15 +1,10 @@
 import styled from "styled-components";
+interface Props {
+  menuBackground?: string
+}
 
-export const Container = styled.div`
-  min-height: 100vh;
-  width: 100%;
 
-  background: linear-gradient(88.59deg, #3CAC59 -66%, #32C457 98.8%);
-
-  padding: 20px 40px;
-`;
-
-export const Main = styled.main`
+export const Main = styled.main<Props>`
   color:#fff ;
   margin-top: 30px;
   display: flex;
@@ -27,7 +22,7 @@ export const Main = styled.main`
     font-family: 'Fredoka One';
     margin-top: 60px;
     span{
-      color: #FFDD1E;
+      color: ${({ menuBackground }) => menuBackground == 'yellow' ? '#32C457' : '#FFDD1E'};
     }
     text-align: center;
   }
@@ -38,7 +33,7 @@ export const Main = styled.main`
     font-weight: 700;
     text-align: center;
     span{
-      color: #FFDD1E ;
+      color:  ${({ menuBackground }) => menuBackground == 'yellow' ? ' #32C457' : '#FFDD1E'};
       
     }
   }
@@ -57,10 +52,9 @@ export const Main = styled.main`
       align-items: center;
       gap: 20px;
       margin-top: 20px;
-      
       a{
         display: flex;
-        align-items: flex-start ;
+        align-items: flex-start;
         gap: 8px;
         text-decoration: none;
         color: #fff;
@@ -81,7 +75,6 @@ export const Main = styled.main`
         align-items:center ;
         gap: 4px;
         height: 40px;
-
         img{
           width: 20px;
         }
